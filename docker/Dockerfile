@@ -1,9 +1,9 @@
 # -- multistage docker build: stage #1: build stage
 FROM golang:1.18-alpine AS build
 
-RUN mkdir -p /go/src/github.com/Pyrinpyi/pyipad-dnsseeder
+RUN mkdir -p /go/src/github.com/SCR-NETWORK/SCR_Network-dnsseeder
 
-WORKDIR /go/src/github.com/Pyrinpyi/pyipad-dnsseeder
+WORKDIR /go/src/github.com/SCR-NETWORK/SCR_Network-dnsseeder
 
 RUN apk add --no-cache curl git openssh binutils gcc musl-dev
 
@@ -12,12 +12,12 @@ COPY go.sum .
 
 # For development it's useful to have SCRd from filesystem, but for deployment
 # we should use the one in github
-RUN go mod edit -dropreplace github.com/Pyrinpyi/pyipad
+RUN go mod edit -dropreplace github.com/SCR-NETWORK/SCR_Network
 ARG SCRD_VERSION
-ARG SCRD_REPOSITORY='github.com/Pyrinpyi/pyipad'
+ARG SCRD_REPOSITORY='github.com/SCR-NETWORK/SCR_Network'
 RUN if [ -n "${SCRD_VERSION}" ]; then \
         # use replace instead of require - to propagate into nested dependancies \
-        go mod edit -replace "github.com/Pyrinpyi/pyipad=$SCRD_REPOSITORY@$SCRD_VERSION"; \
+        go mod edit -replace "github.com/SCR-NETWORK/SCR_Network=$SCRD_REPOSITORY@$SCRD_VERSION"; \
     fi
 
 RUN go mod download
