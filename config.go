@@ -169,7 +169,7 @@ func loadConfig() (*ConfigFlags, error) {
 	}
 
 	// Manually enforce testnet 11 net params so we do not have to
-	// support this special network in pyrind.
+	// support this special network in SCRd.
 	if activeConfig.NetSuffix != 0 {
 		if !activeConfig.Testnet {
 			return nil, errors.New("The net suffix can only be used with testnet")
@@ -178,7 +178,7 @@ func loadConfig() (*ConfigFlags, error) {
 			return nil, errors.New("The only supported explicit testnet net suffix is 11")
 		}
 		activeConfig.NetParams().DefaultPort = "16311"
-		activeConfig.NetParams().Name = "pyrin-testnet-11"
+		activeConfig.NetParams().Name = "SCR-testnet-11"
 	}
 
 	activeConfig.AppDir = cleanAndExpandPath(activeConfig.AppDir)

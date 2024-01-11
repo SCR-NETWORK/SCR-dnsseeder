@@ -10,14 +10,14 @@ RUN apk add --no-cache curl git openssh binutils gcc musl-dev
 COPY go.mod .
 COPY go.sum .
 
-# For development it's useful to have pyrind from filesystem, but for deployment
+# For development it's useful to have SCRd from filesystem, but for deployment
 # we should use the one in github
 RUN go mod edit -dropreplace github.com/Pyrinpyi/pyipad
-ARG pyrinD_VERSION
-ARG pyrinD_REPOSITORY='github.com/Pyrinpyi/pyipad'
-RUN if [ -n "${pyrinD_VERSION}" ]; then \
+ARG SCRD_VERSION
+ARG SCRD_REPOSITORY='github.com/Pyrinpyi/pyipad'
+RUN if [ -n "${SCRD_VERSION}" ]; then \
         # use replace instead of require - to propagate into nested dependancies \
-        go mod edit -replace "github.com/Pyrinpyi/pyipad=$pyrinD_REPOSITORY@$pyrinD_VERSION"; \
+        go mod edit -replace "github.com/Pyrinpyi/pyipad=$SCRD_REPOSITORY@$SCRD_VERSION"; \
     fi
 
 RUN go mod download

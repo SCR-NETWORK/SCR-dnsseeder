@@ -3,7 +3,7 @@
 testdata
 
 # Databases
-pyrind.db
+SCRd.db
 *-shm
 *-wal
 
