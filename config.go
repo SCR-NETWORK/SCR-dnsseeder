@@ -12,12 +12,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Pyrinpyi/pyipad/infrastructure/config"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/config"
 
-	"github.com/Pyrinpyi/pyipad-dnsseeder/version"
+	"github.com/SCR-NETWORK/SCR-dnsseeder/version"
 	"github.com/pkg/errors"
 
-	"github.com/Pyrinpyi/pyipad/util"
+	"github.com/SCR-NETWORK/SCR_Network/util"
 	"github.com/jessevdk/go-flags"
 )
 

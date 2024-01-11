@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Pyrinpyi/pyipad/infrastructure/logger"
-	"github.com/Pyrinpyi/pyipad/util/panics"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/logger"
+	"github.com/SCR-NETWORK/SCR_Network/util/panics"
 )
 
 var (

@@ -12,10 +12,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Pyrinpyi/pyipad/infrastructure/network/addressmanager"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/network/addressmanager"
 
-	"github.com/Pyrinpyi/pyipad/app/appmessage"
-	"github.com/Pyrinpyi/pyipad/domain/consensus/model/externalapi"
+	"github.com/SCR-NETWORK/SCR_Network/app/appmessage"
+	"github.com/SCR-NETWORK/SCR_Network/domain/consensus/model/externalapi"
 	"github.com/miekg/dns"
 	"github.com/pkg/errors"
 )

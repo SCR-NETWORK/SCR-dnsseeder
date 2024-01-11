@@ -12,12 +12,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Pyrinpyi/pyipad/app/appmessage"
+	"github.com/SCR-NETWORK/SCR_Network/app/appmessage"
 
-	"github.com/Pyrinpyi/pyipad/domain/consensus/model/externalapi"
-	"github.com/Pyrinpyi/pyipad/domain/consensus/utils/subnetworks"
+	"github.com/SCR-NETWORK/SCR_Network/domain/consensus/model/externalapi"
+	"github.com/SCR-NETWORK/SCR_Network/domain/consensus/utils/subnetworks"
 
-	"github.com/Pyrinpyi/pyipad/infrastructure/network/dnsseed"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/network/dnsseed"
 	"github.com/pkg/errors"
 
 	"github.com/miekg/dns"

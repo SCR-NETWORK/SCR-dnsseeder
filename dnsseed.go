@@ -14,19 +14,19 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Pyrinpyi/pyipad/app/protocol/common"
-	"github.com/Pyrinpyi/pyipad/infrastructure/config"
-	"github.com/Pyrinpyi/pyipad/infrastructure/network/netadapter/standalone"
+	"github.com/SCR-NETWORK/SCR_Network/app/protocol/common"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/config"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/network/netadapter/standalone"
 
 	"github.com/pkg/errors"
 
-	"github.com/Pyrinpyi/pyipad-dnsseeder/version"
-	"github.com/Pyrinpyi/pyipad/infrastructure/network/dnsseed"
-	"github.com/Pyrinpyi/pyipad/util/panics"
-	"github.com/Pyrinpyi/pyipad/util/profiling"
+	"github.com/SCR-NETWORK/SCR-dnsseeder/version"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/network/dnsseed"
+	"github.com/SCR-NETWORK/SCR_Network/util/panics"
+	"github.com/SCR-NETWORK/SCR_Network/util/profiling"
 
-	"github.com/Pyrinpyi/pyipad/app/appmessage"
-	"github.com/Pyrinpyi/pyipad/infrastructure/os/signal"
+	"github.com/SCR-NETWORK/SCR_Network/app/appmessage"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/os/signal"
 
 	_ "net/http/pprof"
 )

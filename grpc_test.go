@@ -7,11 +7,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Pyrinpyi/pyipad/domain/consensus/model/externalapi"
-	"github.com/Pyrinpyi/pyipad/infrastructure/config"
+	"github.com/SCR-NETWORK/SCR_Network/domain/consensus/model/externalapi"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/config"
 
-	"github.com/Pyrinpyi/pyipad/app/appmessage"
-	"github.com/Pyrinpyi/pyipad/infrastructure/network/dnsseed/pb"
+	"github.com/SCR-NETWORK/SCR_Network/app/appmessage"
+	"github.com/SCR-NETWORK/SCR_Network/infrastructure/network/dnsseed/pb"
 	"google.golang.org/grpc"
 )
 
